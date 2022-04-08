@@ -1,1 +1,43 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.firstSuit {
+  margin-top: 0%;
+  margin-left: 6%;
+}
+
+.number {
+  margin-top: 15%;
+  margin-left: 43%;
+}
+
+#number {
+  font-size: 500%;
+}
+
+.secondSuit {
+  margin-top: 12%;
+  margin-left: 74%;
+}
+
+.red {
+  font-size: 600%;
+  color: red;
+}
+
+.black {
+  color: black;
+}
