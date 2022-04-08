@@ -16,7 +16,12 @@ body {
 
 .firstSuit {
   margin-top: 0%;
-  margin-left: 6%;
+  margin-left: 8%;
+}
+
+.secondSuit {
+  margin-top: 25%;
+  margin-left: 76%;
 }
 
 .number {
@@ -28,14 +33,12 @@ body {
   font-size: 500%;
 }
 
-.secondSuit {
-  margin-top: 12%;
-  margin-left: 74%;
+#icon {
+  font-size: 500%;
 }
 
 .red {
-  font-size: 600%;
-  color: red;
+  color: red !important;
 }
 
 .black {

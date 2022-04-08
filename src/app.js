@@ -2,11 +2,7 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
-  //write your code here
   let suits = ["♦", "♥", "♠", "♣"];
   let numbers = [
     "A",
@@ -26,26 +22,30 @@ window.onload = function() {
 
   let suit = suits[Math.floor(Math.random() * suits.length)];
   let number = numbers[Math.floor(Math.random() * numbers.length)];
-  console.log(suit);
-  // console.log(number);
 
   let icon = document.querySelectorAll("i");
   for (let index = 0; index < icon.length; index++) {
     icon[index].innerHTML = suit;
     const attribute = document.createAttribute("class");
+    if (suit == "♦" || suit == "♥") {
+      attribute.value = "red";
+    } else {
+      attribute.value = "black";
+    }
     icon[index].setAttributeNode(attribute);
   }
-  // Create a class attribute:
+
+  // Crea un atributo "class"
   const attribute = document.createAttribute("class");
 
-  // Set the value of the class attribute:
+  // Define el valor de "class" según el valor de "suit"
   if (suit == "♦" || suit == "♥") {
     attribute.value = "red";
   } else {
     attribute.value = "black";
   }
 
-  // Add the class attribute to the first h1:
+  // Añade el atributo a l <h1>
   const h1 = document.querySelector("h1");
   h1.setAttributeNode(attribute);
 
