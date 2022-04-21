@@ -18,7 +18,7 @@ function randomGenerator() {
     "10",
     "J",
     "Q",
-    "K"
+    "K",
   ];
 
   let suit = suits[Math.floor(Math.random() * suits.length)];
@@ -63,7 +63,7 @@ window.onload = randomGenerator();
 
 // Recoge el valor de ancho registrado en el input lo lo añade como CSS inline al HTML
 let inputAncho = document.querySelector(".ancho");
-inputAncho.addEventListener("keypress", event => {
+inputAncho.addEventListener("keypress", (event) => {
   // Guarda el valor al pulsar enter
   if (event.keyCode == 13) {
     // Formatea "valor" para que sea "number"
@@ -72,9 +72,6 @@ inputAncho.addEventListener("keypress", event => {
 
     // Comprueba que el valor introducido sea un número mayor a 0
     if (typeof valor == "number" && valor > 0) {
-      // console.log("Valor valido");
-      // console.log(valor);
-
       let card = document.querySelector(".card");
       card.style.width = `${valor}px`;
     } else {
@@ -85,7 +82,7 @@ inputAncho.addEventListener("keypress", event => {
 
 // Recoge el valor de alto registrado en el input lo lo añade como CSS inline al HTML
 let inputAlto = document.querySelector(".alto");
-inputAlto.addEventListener("keypress", event => {
+inputAlto.addEventListener("keypress", (event) => {
   // Guarda el valor al pulsar enter
   if (event.keyCode == 13) {
     // Formatea "valor" para que sea "number"
